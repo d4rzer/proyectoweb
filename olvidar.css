@@ -1,0 +1,150 @@
+body{
+    background-color: #001935;
+}
+#tituloprincipal{
+    top: 2%;
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position:fixed;
+}
+#iconosearch{
+    top: 2.3%;
+    left: 380px;
+    position: fixed;
+    padding: 11px 11px 11px 11px;
+
+}
+#barradebusqueda{
+    top: 3%;
+    left: 425px;
+    position: fixed;
+    padding: 11px 500px 11px 10px;
+    display: block;
+    margin: 0;
+    border: none;
+    color: white;
+    text-align: left;
+    background: #405368;
+    font: 16px/1.4 "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+::placeholder{
+    color: rgb(0,0,0,0.5);
+
+}
+#registrarse{
+    background-color:#03b8ff;
+	text-decoration: none;
+	padding:10px 90px;
+    display:inline-block;
+    color: white;
+    border:none;
+    top: 3.5%;
+    right: 1%;
+    position:fixed;
+    cursor: pointer;
+}
+#iniciar{
+    background-color:white;
+    color: #03b8ff;
+	text-decoration: none;
+	padding:10px 78px;
+    display:inline-block;
+    border:none;
+    top: 3.5%;
+    right: 14%;
+    position:fixed;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+}
+#registrarse:hover{
+    background-color: white;
+    color: #03b8ff;
+}
+#iniciar:hover{
+    background-color: #03b8ff;
+    color: white
+}
+
+#sad{
+    top: 150px;
+    right: 10%;
+    position: fixed;
+}
+#regaño{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 90px;
+    left: 20%;
+    top: 100px;
+    position: fixed;
+}
+.form{
+    width: 100%;
+    height: 50px;
+    top: 500px;
+    left: 380px;
+    max-width: 400px;
+    background: none;
+    position: relative;
+    overflow: hidden;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: white;
+    outline: 0px;
+    padding-top: 10px;
+    border: none;
+}
+.form .arribacorreo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form .arribacorreo:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #03b8ff;
+    transform: translateX(-100%); 
+    transition: all 0.3s ease;
+}
+.arribacorreo2{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: white;
+}
+.form input:focus + .arribacorreo .arribacorreo2, .form input:valid + .arribacorreo .arribacorreo2{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #03b8ff;
+}
+.form input:focus + .arribacorreo::after, .form input:valid + .arribacorreo::after{
+    transform: translateX(0%);
+}
+#raras{
+    color: white;
+    font-family: "Inter",sans-serif;
+    font-size: 15px;
+    top: 450px;
+    left: 385px;
+    position:fixed;
+}
